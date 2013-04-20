@@ -14,6 +14,7 @@
     <web-resource key="GijiRock-resources" name="GijiRock Web Resources">
         <dependency>com.atlassian.auiplugin:ajs</dependency>
         <resource type="download" name="GijiRock.css" location="/css/GijiRock.css" />
+        <resource type="download" name="GijiRock_write.js" location="/js/GijiRock_write.js"/>
         <resource type="download" name="jquery.ui.core.js" location="/js/jquery.ui.core.js" />
         <resource type="download" name="jquery.ui.widget.js" location="/js/jquery.ui.widget.js" />
         <resource type="download" name="jquery.ui.mouse.js" location="/js/jquery.ui.mouse.js" />
@@ -31,5 +32,13 @@
 
     <!-- import from the product container -->
     <component-import key="applicationProperties" interface="com.atlassian.sal.api.ApplicationProperties" />
+
+    <keyboard-shortcut key="gijirock" i18n-name="admin.keyboard.shortcut.gijirock.name" name="Gijirock">
+        <order>60</order>
+        <description key="admin.keyboard.shortcut.gijirock.desc">GijiRock</description>
+        <shortcut>6</shortcut>
+        <operation type="execute">GijiRock();</operation>
+        <context>viewcontent</context>
+    </keyboard-shortcut>
 
 </atlassian-plugin>
