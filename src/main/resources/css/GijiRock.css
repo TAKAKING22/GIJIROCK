@@ -1,0 +1,18 @@
+div.gijirockContent {
+	position : absolute;
+}
+div.gijirockContent p {
+	color : #ff0033;
+	font-weight : bold;
+	font-family:'Comic Sans MS','cursive',monospace;
+}
+#st_001 {
+	width : 80px;
+	height : 80px;
+	background-image: url(images/st_001.png);
+}
+#st_002 {
+	width : 80px;
+	height : 80px;
+	background-image: url(images/st_002.png);
+}

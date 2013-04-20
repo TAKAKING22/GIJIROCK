@@ -9,25 +9,27 @@
 
     <!-- add our i18n resource -->
     <resource type="i18n" name="i18n" location="GijiRock"/>
-    
+
     <!-- add our web resources -->
     <web-resource key="GijiRock-resources" name="GijiRock Web Resources">
         <dependency>com.atlassian.auiplugin:ajs</dependency>
-        
-        <resource type="download" name="GijiRock.css" location="/css/GijiRock.css"/>
-		<resource type="download" name="jquery-2.0.0.js" location="/js/jquery-2.0.0.js"/>
-        <resource type="download" name="GijiRock.js" location="/js/GijiRock.js"/>
-        <resource type="download" name="images/" location="/images"/>
-
-        <context>GijiRock</context>
+        <resource type="download" name="GijiRock.css" location="/css/GijiRock.css" />
+        <resource type="download" name="jquery.ui.core.js" location="/js/jquery.ui.core.js" />
+        <resource type="download" name="jquery.ui.widget.js" location="/js/jquery.ui.widget.js" />
+        <resource type="download" name="jquery.ui.mouse.js" location="/js/jquery.ui.mouse.js" />
+        <resource type="download" name="jquery.ui.draggable.js" location="/js/jquery.ui.draggable.js" />
+        <resource type="download" name="jquery.jmp3.js" location="/js/jquery.jmp3.js" />
+        <resource type="download" name="GijiRock_read.js" location="/js/GijiRock_read.js" />
+        <resource type="download" name="images/" location="/images" />
+        <context>viewcontent</context>
     </web-resource>
-    
+
     <!-- publish our component -->
     <component key="myPluginComponent" class="com.jpn.fireball.MyPluginComponentImpl" public="true">
         <interface>com.jpn.fireball.MyPluginComponent</interface>
     </component>
-    
+
     <!-- import from the product container -->
     <component-import key="applicationProperties" interface="com.atlassian.sal.api.ApplicationProperties" />
-    
+
 </atlassian-plugin>
